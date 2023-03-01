@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txvOutput"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -19,8 +20,26 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="472dp" />
+        android:layout_marginTop="104dp"
+        android:text="@string/btnZero"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="214dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnIncrease"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="429dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

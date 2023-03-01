@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="title">確定</string>
+    <string name="btnIncrease">增加</string>
+    <string name="btnZero">歸0</string>
 </resources>
